@@ -4,7 +4,7 @@ import * as React from "react";
 function App() {
   const [price, setPrice] = React.useState(0);
   const [priceBTC, setPriceBTC] = React.useState(0);
-  const [input, setInput] = React.useState(10);
+  const [input, setInput] = React.useState(1400);
 
   const runOnce = [];
   React.useEffect(() => {
