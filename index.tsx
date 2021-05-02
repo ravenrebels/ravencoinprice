@@ -98,7 +98,13 @@ function App() {
             Twitter
           </a>
           <p>
-            <small>Live prices from Binance</small>
+            <small>Live prices from <a
+                href="http://binance.com/"
+                className="ravencoin-price-calculator__footer-link"
+              >
+                Binance
+              </a>
+            </small>
           </p>
         </footer>
       </div>
