@@ -1,21 +1,21 @@
 {
-  "name": "glassy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "snowpack dev",
-    "build": "snowpack build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "snowpack": "^3.3.7"
-  }
+    "type": "module",
+    "name": "glassy",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "SNOWPACK_PUBLIC_APP_VERSION=dev snowpack dev",
+        "build": "SNOWPACK_PUBLIC_APP_VERSION=$npm_package_version snowpack build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "snowpack": "^3.3.7"
+    }
 }
