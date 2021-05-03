@@ -20,4 +20,4 @@ First, update app version in `package.json`, then:
     git commit -m 'bump version'
     npm run build
 
-Deploy comtents of `build` directory to wherever.
+Deploy contents of `build` directory to wherever.
