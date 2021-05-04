@@ -1,12 +1,12 @@
 {
     "type": "module",
     "name": "glassy",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "cross-env SNOWPACK_PUBLIC_APP_VERSION=dev snowpack dev",
-        "build": "cross-env SNOWPACK_PUBLIC_APP_VERSION=$npm_package_version snowpack build"
+        "dev": "snowpack dev",
+        "build": "snowpack build"
     },
     "keywords": [],
     "author": "",
@@ -16,7 +16,7 @@
         "react-dom": "^17.0.2"
     },
     "devDependencies": {
-        "cross-env": "^7.0.3",
+        "@snowpack/plugin-webpack": "^2.3.1",
         "snowpack": "^3.3.7"
     }
 }
