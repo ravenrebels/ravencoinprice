@@ -7,4 +7,12 @@ export default {
         public: "/",
         src: "/",
     },
+    plugins: [
+        [
+            "@snowpack/plugin-webpack",
+            {
+                sourceMap: true,
+            },
+        ],
+    ],
 };
