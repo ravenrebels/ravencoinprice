@@ -43,6 +43,9 @@ function App() {
         ravenValue = "";
         dollarValue = "";
     }
+
+    const ONE_HUNDRED_MILLIONS = 1e8;
+    const sats = priceBTC && Math.round(priceBTC * ONE_HUNDRED_MILLIONS);
     return (
         <div>
             <div className="ravencoin-price-calculator__main-container ravencoin-price-calculator__glass-container">
@@ -53,7 +56,7 @@ function App() {
                         <small> ${price && price.toFixed(3)}</small>
                     </div>
                     <div>
-                        <small> SATS {priceBTC && priceBTC * 100000000}</small>
+                        <small> SATS {sats}</small>
                     </div>
                 </div>
                 <section className="ravencoin-price-calculator__glass-container">
